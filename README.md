@@ -34,7 +34,7 @@
 操作说明
 ===
     1.首先运行个项目sql文件夹中的sql并启动redis
-    2.然后修改config-center中的各项目的相关数据库地址以及redis地址
+    2.然后修改config-center中的各模块的相关数据库地址以及redis地址(注意各模块内还有相应的配置文件，主要包括为模块指定config-server和eureka-server的位置以及确定各模块自己的端口号)
     3.按顺序启动服务
       registry--->config-center--->gateway--->auth-center--->其他微服务
     4.通过地址可以访问serviceA中暴露的接口。 地址示例：localhost:{serviceA-port}/getJsonData/{name}
