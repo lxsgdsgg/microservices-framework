@@ -49,3 +49,8 @@
         d.根据授权码获取access_token:localhost:8766/oauth/token?code=MXqYZb&grant_type=authorization_code&redirect_uri=http://localhost:9001/callback&scope=app(注意要添加header属性 [{"key":"Content-Type","value":"application/x-www-form-urlencoded","description":""}])
         e.根据token范围接口
         ps:若未说明由浏览器访问则均通过PostMan发送相关请求
+ 
+ Q&A
+ ===
+1.运行时报错：The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone
+解决方案：在mysql中运行set GLOBAL time_zone = '+8:00'
