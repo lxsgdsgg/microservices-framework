@@ -41,7 +41,7 @@
     5.通过ServiceB的Feign接口可以声明式访问serviceA中的暴露的的接口。地址示例：locahost:{port}/courseApi/{name}
     6.通过密码模式访问受保护接口。
         a.auth-center获取访问受保护接口的token 地址示例：localhost:8762/uaa/oauth/token?grant_type=password&client_id=system&client_secret=system&scope=app&username=admin&password=admin
-        b.根据获取的token访问受保护的接口:localhost:8001/users/current?access_token=ad630d4d-24ab-4496-8294-49ae03e1ce2f
+        b.根据获取的token访问受保护的接口 地址示例:localhost:8001/users/current?access_token=ad630d4d-24ab-4496-8294-49ae03e1ce2f
     8.通过授权码模式访问受保护的接口
         a.通过浏览器访问http://localhost:8766/oauth/authorize?client_id=system&redirect_uri=http://localhost:9001/callback&response_type=code&scope=app
         b.输入admin admin
