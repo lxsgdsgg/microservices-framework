@@ -1,0 +1,13 @@
+feign:
+  hystrix:
+    enabled: true
+logging:
+  level:
+    com.unicorn.serviceb.feignService.CourseClient: DEBUG  #DEBUG级别feign客户端才会输出日志 FeignLogConfiguration里面的输出等级决定着日志输出内容的多寡
+
+#开启hystrix的监控相关信息
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream

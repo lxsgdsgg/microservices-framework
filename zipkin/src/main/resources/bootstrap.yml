@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: zipkin-server
+  main:
+    allow-bean-definition-overriding: true
+server:
+  port: 9411
+eureka:
+  instance:
+    #    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+    prefer-ip-address: true
+    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 5
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false

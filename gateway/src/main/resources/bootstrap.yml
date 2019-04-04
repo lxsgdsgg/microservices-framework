@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-center
+      profile: dev
+      # 和config-server的配置文件中的{profile}参数对应
+server:
+  port: 8762
+
+#Zuul会默认代理eureka上面的所有已经注册的微服务 地址为 zuulIp + zuulPort + eureka上微服务器的id + 对应的接口
+eureka:
+  instance:
+    #    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+    prefer-ip-address: true
+    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 5
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+
+

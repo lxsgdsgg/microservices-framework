@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: service-b
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-center
+      profile: dev                  # 和config-server的配置文件中的{profile}参数对应
+
+
+#文件名必须是bootstrap.yml 否则无法在config-server加载相应配置
+eureka:
+  instance:
+    #    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+    prefer-ip-address: true
+    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 5
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+server:
+  port: 8764
+
+

@@ -1,0 +1,18 @@
+eureka:
+  instance:
+    #    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+server:
+  port: 8760
+
+#Zuul会默认代理eureka上面的所有已经注册的微服务 地址为 zuulIp + zuulPort + eureka上微服务器的id + 对应的接口
+
+spring:
+  application:
+    name: monitor
+  profiles:
+    active: a

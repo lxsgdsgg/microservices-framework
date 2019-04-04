@@ -1,0 +1,43 @@
+#开启hystrix的监控相关信息以及zuul路由信息
+management:
+  endpoint:
+    routes:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream, info, health, routes
+
+#zuul路由配置
+zuul:
+  ignored-services: '*'    #此处配置为忽略所有路由 只路由以下指定的服务
+  routes:
+    sensitive-headers: Cookie,Set-Cookie
+    service-b:                          #配置方式1
+      service-id: service-b              # service-id 指eureka中的微服务名称  还是通过url指定 比如 url:http://localhost:8763/(不建议使用URL)
+      path: /b/**
+    service-a: /a/**                     #配置方式2
+    commonapi:
+      path: /api/**
+      service-id: commonapi
+      sensitiveHeaders: "*"
+    auth:
+      path: /uaa/**
+      service-id: oauth-center
+      strip-prefix: true
+      custom-sensitive-headers: true
+    user:
+      path: /user/**
+      service-id: user-center
+      sensitiveHeaders: "*"
+
+#security:
+#  oauth2:
+#    client:
+#      access-token-uri: http://localhost:8762/uaa/oauth/token
+#      user-authorization-uri: http://localhost:8762/uaa/oauth/authorize
+#      client-id: auth-center
+#    resource:
+#      user-info-uri: http://localhost:8001/user/user-me
+#      prefer-token-info: false
+
