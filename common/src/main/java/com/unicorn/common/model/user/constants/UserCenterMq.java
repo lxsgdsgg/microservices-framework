@@ -3,7 +3,7 @@ package com.unicorn.common.model.user.constants;
 /**
  * rabbitmq的exchange和routing key定义
  *
- * @author awake
+ * @author Awake
  */
 public interface UserCenterMq {
 

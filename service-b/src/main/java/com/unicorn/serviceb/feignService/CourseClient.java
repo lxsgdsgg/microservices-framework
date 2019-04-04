@@ -1,6 +1,6 @@
 package com.unicorn.serviceb.feignService;/**
  * @AUTHOR Awake
- * Created by awake on 2019/3/24.
+ * Created by Awake on 2019/3/24.
  */
 
 import com.unicorn.serviceb.configuration.FeignLogConfiguration;

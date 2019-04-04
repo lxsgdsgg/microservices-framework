@@ -7,7 +7,7 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 /**
- * @author awake
+ * @author Awake
  */
 @SpringBootApplication
 @EnableZuulProxy

@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * 资源服务配置
  *
- * @author awake
+ * @author Awake
  */
 @EnableResourceServer
 @EnableWebSecurity

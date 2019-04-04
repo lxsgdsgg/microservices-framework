@@ -9,7 +9,7 @@ import java.io.Serializable;
 /**
  * 用户账号类型
  *
- * @author awake
+ * @author Awake
  */
 @Data
 @NoArgsConstructor

@@ -7,7 +7,7 @@ import java.util.Set;
 /**
  * 需要放开权限的url
  *
- * @author awake
+ * @author Awake
  */
 public final class PermitAllUrl {
 

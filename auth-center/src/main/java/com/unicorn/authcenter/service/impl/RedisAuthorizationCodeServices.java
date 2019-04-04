@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * redis存储授权码
  *
- * @author awake
+ * @author Awake
  */
 @Service
 public class RedisAuthorizationCodeServices extends RandomValueAuthorizationCodeServices {

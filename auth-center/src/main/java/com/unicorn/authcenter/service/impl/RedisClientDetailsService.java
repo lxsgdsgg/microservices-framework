@@ -21,7 +21,7 @@ import java.util.List;
  * 如果有通过界面修改client的需求的话，不要用JdbcClientDetailsService了，请用该类，否则redis里有缓存<br>
  * 如果手动修改了该表的数据，请注意清除redis缓存，是hash结构，key是client_details
  *
- * @author awake
+ * @author Awake
  */
 @Slf4j
 @Service

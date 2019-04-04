@@ -3,7 +3,7 @@ package com.unicorn.common.model.user.constants;
 /**
  * 用户账号类型
  *
- * @author awake
+ * @author Awake
  */
 public enum CredentialType {
 

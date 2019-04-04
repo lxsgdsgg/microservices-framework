@@ -13,7 +13,7 @@ import java.util.Set;
  * 用户角色关系<br>
  * 用户和角色是多对多关系，sys_role_user是中间表
  *
- * @author awake
+ * @author Awake
  */
 @Mapper
 public interface UserRoleDao {

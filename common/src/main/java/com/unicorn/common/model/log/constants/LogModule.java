@@ -7,7 +7,7 @@ import java.util.Map;
  * 日志模块定义<br>
  * 2018.07.29作废该类，详情请看视频07.4 日志模块常量定义调整
  *
- * @author awake
+ * @author Awake
  */
 @Deprecated
 public abstract class LogModule {

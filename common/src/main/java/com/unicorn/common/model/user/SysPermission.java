@@ -8,7 +8,7 @@ import java.util.Date;
 /**
  * 权限标识
  *
- * @author awake
+ * @author Awake
  */
 @Data
 public class SysPermission implements Serializable {

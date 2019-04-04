@@ -3,7 +3,7 @@ package com.unicorn.common.model.user.constants;
 /**
  * 用户类型
  *
- * @author awake
+ * @author Awake
  */
 public enum UserType {
 

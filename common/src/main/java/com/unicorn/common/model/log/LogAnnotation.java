@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 /**
  * 日志注解
  *
- * @author awake
+ * @author Awake
  */
 @Target({ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
