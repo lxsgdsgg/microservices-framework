@@ -53,4 +53,5 @@
  Q&A
  ===
 1.运行时报错：The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone
-    解决方案：在mysql中执行：set GLOBAL time_zone='+8:00'
+
+解决方案：在mysql中执行：set GLOBAL time_zone='+8:00'
