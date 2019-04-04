@@ -33,7 +33,7 @@
 
 操作说明
 ===
-    1.首先运行个项目sql文件夹中的sql
+    1.首先运行个项目sql文件夹中的sql并启动redis
     2.然后修改config-center中的各项目的相关数据库地址以及redis地址
     3.按顺序启动服务
       registry--->config-center--->gateway--->auth-center--->其他微服务
