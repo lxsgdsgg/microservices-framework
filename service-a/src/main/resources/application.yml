@@ -14,3 +14,10 @@ spring:
     name: service-a
   profiles:
     active: a
+
+security:
+  oauth2:
+    resource:
+      id: service-a
+      user-info-uri: http://localhost:8762/uaa/user-me
+      prefer-token-info: false

@@ -16,7 +16,9 @@ zuul:
     service-b:                          #配置方式1
       service-id: service-b              # service-id 指eureka中的微服务名称  还是通过url指定 比如 url:http://localhost:8763/(不建议使用URL)
       path: /b/**
-    service-a: /a/**                     #配置方式2
+    service-a:
+      service-id: service-a              # service-id 指eureka中的微服务名称  还是通过url指定 比如 url:http://localhost:8763/(不建议使用URL)
+      path: /a/**                      #配置方式2
     commonapi:
       path: /api/**
       service-id: commonapi
@@ -41,3 +43,13 @@ zuul:
 #      user-info-uri: http://localhost:8001/user/user-me
 #      prefer-token-info: false
 
+
+security:
+  oauth2:
+    client:
+      access-token-uri: http://localhost:8762/uaa/oauth/token
+      user-authorization-uri: http://localhost:8762/uaa/oauth/authorize
+      client-id: auth-center
+    resource:
+      user-info-uri: http://localhost:8762/uaa/user-me
+      prefer-token-info: false
