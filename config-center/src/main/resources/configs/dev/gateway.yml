@@ -43,6 +43,11 @@ zuul:
 #      user-info-uri: http://localhost:8001/user/user-me
 #      prefer-token-info: false
 
+logging:
+  level:
+    root: info
+    com.springframework: debug
+
 
 security:
   oauth2:
@@ -51,5 +56,5 @@ security:
       user-authorization-uri: http://localhost:8762/uaa/oauth/authorize
       client-id: auth-center
     resource:
-      user-info-uri: http://localhost:8762/uaa/user-me
+      user-info-uri: http://localhost:8766/user-me
       prefer-token-info: false
