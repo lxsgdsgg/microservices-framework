@@ -46,8 +46,8 @@
         a.通过浏览器访问http://localhost:8766/oauth/authorize?client_id=system&redirect_uri=http://localhost:9001/callback&response_type=code&scope=app
         b.输入admin admin
         c.点击确认授权，获取到授权码
-        d.根据授权码获取access_token:localhost:8766/oauth/token?code=MXqYZb&grant_type=authorization_code&redirect_uri=http://localhost:9001/callback&scope=app(注意要添加header属性 [{"key":"Content-Type","value":"application/x-www-form-urlencoded","description":""}])
-        e.根据token范围接口
+        d.根据授权码获取access_token  localhost:8766/oauth/token?code=MXqYZb&grant_type=authorization_code&redirect_uri=http://localhost:9001/callback&scope=app(注意要添加header属性 [{"key":"Content-Type","value":"application/x-www-form-urlencoded","description":""}])
+        e.根据token访问接口
         ps:若未说明由浏览器访问则均通过PostMan发送相关请求
  
  Q&A
